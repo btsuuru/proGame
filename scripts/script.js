@@ -1,15 +1,3 @@
-/*$(document).ready(function(){
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-var tab1 = document.getElementById("tab1");
-var tab2 = document.getElementById("tab2");
-var tab3 = document.getElementById("tab3");
-tab1.removeAttribute("class");
-tab2.removeAttribute("class");
-tab3.removeAttribute("class");
-document.getElementById($(this).attr("id")).setAttribute("class", "active");
-})
-});*/
-
 function trocaAba(praOnde){
   var tab1 = document.getElementById("tab1");
   var tab2 = document.getElementById("tab2");
@@ -29,3 +17,17 @@ function trocaAba(praOnde){
     break;
   }
 }
+
+$(document).ready(function(){
+    $window = $(window);
+    //Captura cada elemento section com o data-type "background"
+    $('section[data-type="background"]').each(function(){
+        var $scroll = $(this);
+            //Captura o evento scroll do navegador e modifica o backgroundPosition de acordo com seu deslocamento.
+            $(window).scroll(function() {
+                var yPos = -($window.scrollTop() / $scroll.data('speed'));
+                var coords = '50% '+ yPos + 'px';
+                $scroll.css({ backgroundPosition: coords });
+            });
+   });
+}); 
