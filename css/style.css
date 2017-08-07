@@ -49,7 +49,8 @@ body {
   padding: 20px;
   height: 50%;
   /*color: #fff;*/
-  background-color: #ff9800;
+  /*background-color: #ff9800;*/
+  background-color: white;
 }
 
 #section4 {
@@ -65,4 +66,19 @@ body {
     background: url(../imgs/3.jpg) 50% 0 fixed;
     background-size: cover;
     position: relative;
+}
+
+.cabecalho {
+  font-size: 10em;
+}
+.cab2 {
+  font-size: 3em;
+}
+@media screen and (max-width: 768px) {
+  .cabecalho {
+    font-size: 3em;
+  }
+  .cab2 {
+    font-size: 1em;
+  }
 }
