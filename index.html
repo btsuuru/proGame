@@ -30,14 +30,10 @@
   <!-- Icones -->
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" />
   <!-- Bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Custom -->
   <link href="fonts/fonts.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
-  <script src="scripts/validator.js"></script>
-  <script src="scripts/script.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -76,17 +72,18 @@
     </nav>
   </header>
 
-  <section class="container-fluid" id="section1">
-    <div class="jumbotron">
+  <section class="container-fluid parallaxBar" id="section1" data-speed="2" data-type="background">
+    <div class="jumbotron" style="opacity: 0.8">
       <h1>ProGAME</h1>
-      <p>TLATLA</p>
+      <p></p>
     </div>
   </section>
 
-  <section class="container-fluid parallaxBar" id="section2" data-speed="2" data-type="background">
-    <div class="jumbotron" style="opacity: 0.8">
+  <section class="container-fluid" id="section2">
+    <div class="jumbotron">
       <h1>ProGAME</h1>
       <p>Aplicação web com o intuito de auxiliar o desenvolvimento da lógica na programação.</p>
+      <p>Desenvolvido na UENP para disciplina de Projeto Articulador III lecionada pela professora Maísa.</p>
     </div>
   </section>
 
@@ -338,4 +335,11 @@
 </section>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="scripts/validator.js"></script>
+<script src="scripts/script.js"></script>
+
+
 </html>
